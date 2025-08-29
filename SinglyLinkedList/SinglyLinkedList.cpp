@@ -280,6 +280,7 @@ int main(){
     Node<std::string> *node = new Node<std::string>("ee");
     book.insertTail(node);
     book.changeData(3,"ii");
+    book.insertTail("mm");
     book.printList();
 
     book.overturn();
