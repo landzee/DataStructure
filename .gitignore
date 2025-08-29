@@ -1,5 +1,5 @@
-build/
+﻿build/
+*/build/
 
 CMakeLists.txt
-
-.gitignore
+*/CMakeLists.txt
