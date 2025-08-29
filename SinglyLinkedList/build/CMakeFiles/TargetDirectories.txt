@@ -1,0 +1,3 @@
+D:/Learning/DataStructure/SinglyLinkedList/build/CMakeFiles/SinglyLinkedList.dir
+D:/Learning/DataStructure/SinglyLinkedList/build/CMakeFiles/ALL_BUILD.dir
+D:/Learning/DataStructure/SinglyLinkedList/build/CMakeFiles/ZERO_CHECK.dir
