@@ -113,6 +113,7 @@ class SinglyLinkedList{
                     }//选中要删除的节点的前一个节点
                     Node<T>* del = cur->next;
                     cur->next = del->next;
+                    delete del;
                 }
         }
 
@@ -125,9 +126,13 @@ class SinglyLinkedList{
             while(cur != NULL){
                 if(cur->data == data){
                     pre->next = cur->next;
+                    delete cur;
+                    cur = pre->next;
                 }
+                else{
                 pre = cur;
                 cur = cur->next;
+                }
             }
         }
 
@@ -281,10 +286,12 @@ int main(){
     book.insertTail(node);
     book.changeData(3,"ii");
     book.insertTail("mm");
+    book.deleteNodeData("dd");
+    book.deleteNodePos(2);
     book.printList();
 
-    book.overturn();
-    book.printList();
+    // book.overturn();
+    // book.printList();
     book.release();
     return 0;
 }
